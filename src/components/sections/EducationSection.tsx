@@ -66,18 +66,12 @@ export default function EducationSection() {
                     <span>{edu.period}</span>
                     <span>·</span>
                     <span>{edu.location}</span>
-                    {edu.gpaNote && (
-                      <>
-                        <span>·</span>
-                        <span>{edu.gpaNote}</span>
-                      </>
-                    )}
                   </div>
                 </div>
               </div>
 
               {/* Note */}
-              {edu.note && (
+              {'note' in edu && edu.note && (
                 <p
                   className="text-xs font-mono-custom mb-4 px-3 py-2 rounded-lg"
                   style={{
